@@ -28,3 +28,7 @@ console.log(" ");
 products.forEach((product) => console.log(product.name, product.price));
 console.log(" ");
 products.forEach((product) => console.log(product.name, product.price * 1.1));
+console.log(" ");
+const qualityProducts = products.filter((product) => product.rating > 4.4);
+console.log("Highly rated products:", qualityProducts);
+qualityProducts.forEach((product) => console.log(product.name));
